@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thermometer.iml" filepath="$PROJECT_DIR$/.idea/modules/thermometer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thermometer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/thermometer_main.iml" group="thermometer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thermometer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/thermometer_test.iml" group="thermometer" />
+    </modules>
+  </component>
+</project>
