@@ -32,4 +32,5 @@ public class Temperature {
     public Double getTemperature() {
         return temperature;
     }
+
 }

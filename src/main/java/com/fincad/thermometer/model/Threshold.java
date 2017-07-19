@@ -2,6 +2,7 @@ package com.fincad.thermometer.model;
 
 import com.fincad.thermometer.model.enums.Direction;
 import com.fincad.thermometer.model.enums.TemperatureUnity;
+import org.springframework.util.Assert;
 
 import javax.persistence.*;
 
@@ -27,11 +28,15 @@ public class Threshold {
     }
 
     public Threshold(String email, Direction direction, boolean notifyFluctuation, Double targetTemperature, TemperatureUnity unity, String location) {
+        Assert.notNull(email, "e-mail cannot be null");
+        Assert.notNull(targetTemperature, "target temperature cannot be null");
+        Assert.notNull(location, "location cannot be null");
+
         this.email = email;
-        this.direction = direction;
+        this.direction = direction != null ? direction : Direction.ANY;
         this.notifyFluctuation = notifyFluctuation;
         this.targetTemperature = targetTemperature;
-        this.unity = unity;
+        this.unity = unity != null ? unity : TemperatureUnity.C;
         this.location = location;
     }
 
