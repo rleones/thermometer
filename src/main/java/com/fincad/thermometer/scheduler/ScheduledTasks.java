@@ -22,7 +22,7 @@ public class ScheduledTasks {
     @Autowired
     private TemperatureService temperatureService;
 
-    @Scheduled(cron = "*/15 * * * * *")
+    @Scheduled(cron = "0 0 * * * *")
     public void reportCurrentTime() {
         log.info("The time is now {}", dateFormat.format(new Date()));
         temperatureService.notifyThreshold();

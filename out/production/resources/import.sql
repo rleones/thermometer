@@ -1,0 +1,5 @@
+insert into THRESHOLD (ID, EMAIL, DIRECTION, NOTIFY_FLUCTUATION, TARGET_TEMPERATURE, UNITY, LOCATION) VALUES (1, 'rleones.silva@gmail.com', 'ANY', 0, 30.0, 'C', 'Salvador');
+
+insert into THRESHOLD (ID, EMAIL, DIRECTION, NOTIFY_FLUCTUATION, TARGET_TEMPERATURE, UNITY, LOCATION) VALUES (2, 'rleones.silva@gmail.com', 'ANY', 0, 0.0, 'C', 'Vancouver');
+
+insert into THRESHOLD (ID, EMAIL, DIRECTION, NOTIFY_FLUCTUATION, TARGET_TEMPERATURE, UNITY, LOCATION) VALUES (3, 'rleones.silva@gmail.com', 'ANY', 0, -5.0, 'C', 'Toronto');
