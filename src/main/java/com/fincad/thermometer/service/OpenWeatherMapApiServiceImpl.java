@@ -26,15 +26,6 @@ public class OpenWeatherMapApiServiceImpl implements WeatherApiService {
 
     @Override
     public Double getWeatherConditions(String location) throws IOException, JSONException {
-       // String location = jogging.getLocation().toLowerCase().replaceAll(" ", "%20");
-        // mocking some values, so I dont have to get information every time while testing
-if (location.equalsIgnoreCase("TORONTO")) {
-    return 24.58;
-} else if (location.equalsIgnoreCase("SALVADOR")) {
-    return 23.0;
-} else if (location.equalsIgnoreCase("VANCOUVER")) {
-    return 21.52;
-}
         JSONObject json = doQuery(String.format("/weather?q=%s", location.replaceAll(" ", "%20")));
 
         JSONObject main = (JSONObject) json.get("main");

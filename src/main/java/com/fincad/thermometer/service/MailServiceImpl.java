@@ -60,7 +60,6 @@ public class MailServiceImpl implements MailService {
     public void sendNotification(Threshold threshold) throws Exception {
         Map<String, Object> model = new HashMap<>();
 
-        model.put("user", threshold.getEmail());
         model.put("location", threshold.getLocation());
         model.put("temperature", threshold.getTargetTemperature());
 
